@@ -9,7 +9,7 @@ var fs = require('fs');
 // shared variables
 var g = {};
 g.host = '0.0.0.0';
-g.port = process.env.PORT;
+g.port =(process.env.PORT ? process.env.PORT : 80);
 
 function handler(req, res) {
     
