@@ -2,16 +2,15 @@
   <head>
     <title>Hello, Web</title>
     <style>
-      iframe {width:600px;}
+      iframe {width:600px;height:600px;}
     </style>
   </head>
   <body>
     <h1>Hello, Web</h1>
     <address>{@dateTime}</address>
     <p>
-      <a href="{@dataUrl}" target="data">Get data</a>
+      <a rel="data" href="{@dataUrl}" target="data">Get data</a>
     </p>
-    <iframe id="data" name="data" class="data">
-    </iframe>
+    <iframe id="data" name="data" class="data" />
   </body>
 </html>

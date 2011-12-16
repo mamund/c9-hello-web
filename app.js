@@ -103,7 +103,7 @@ function handler(req, res) {
       for(i=0,x=m.remoteData.length;i<x;i++) {
         row = m.remoteFormat;
         row = row.replace('{@user}', m.remoteData[i].user.screen_name);
-        row = row.replace('{@msg}', m.remoteData[i].text);
+        row = row.replace('{@msg}', m.remoteData[i].statusnet_html);
         output += row;
       }
       

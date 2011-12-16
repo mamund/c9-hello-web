@@ -5,6 +5,18 @@
       dt {font-weight:bold;}
       dd {font-style:italic;}
     </style>
+    <script>
+    
+      window.onload = function() {
+        var i, x, coll;
+        
+        coll = document.getElementsByTagName('a');
+        for(i=0, x=coll.length; i<x; i++) {
+          coll[i].setAttribute('target', '_blank');
+        }
+      }
+    
+    </script>
   </head>
   <body>
     <h3>{@remoteHost}</h3>
