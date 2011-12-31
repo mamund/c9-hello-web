@@ -11,6 +11,7 @@ var g = {};
 g.host = '0.0.0.0';
 g.port =(process.env.PORT ? process.env.PORT : 80);
 
+/* handle requests */
 function handler(req, res) {
     
   // local vars
@@ -74,6 +75,7 @@ function handler(req, res) {
     
     httpClient = http.createClient(80, m.remoteHost);    
     clientReq = httpClient.request('GET', url, headers);
+    
     clientReq.on('response', function(clientRes) {
       
       clientRes.on('data', function(chunk) {
